@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 70%;
+  height: 95%;
+  background: rgba(255, 255, 255, 0.801);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.596);
+}
+
+.appName {
+  font-size: 2rem;
+  align-self: center;
+  color: black;
+  margin: 50px 0 10px 0;
+}
+
+.buttonDiv {
+  align-self: center;
+  margin: 5px 0 70px 0;
+}
+.buttonDiv button {
+  border: none;
+  margin: 0 10px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: white;
+  background: rgb(250, 56, 56);
+}
+
+.buttonDiv .update {
+  background: rgb(51, 179, 51);
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}

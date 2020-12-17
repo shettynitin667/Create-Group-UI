@@ -1,0 +1,88 @@
+.data {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.groupLogo {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.groupLogo button {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  color: white;
+  background: linear-gradient(
+    -45deg,
+    rgba(24, 195, 50, 1) 0%,
+    rgba(21, 155, 193, 1) 70%
+  );
+  cursor: pointer;
+  border: 2px solid white;
+  outline: none;
+  padding: 10px;
+  border-radius: 50%;
+  top: 150px;
+  left: 150px;
+}
+
+.groupLogo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border: 5px solid white;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.493);
+}
+
+input[type="file"] {
+  opacity: 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  column-gap: 20px;
+  place-items: center;
+}
+
+form input {
+  display: inline-block;
+  width: 400px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.301);
+  background: none;
+  padding: 0px 20px;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.63);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1008px) {
+  .data {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 20px;
+  }
+  .groupLogo {
+    align-self: center;
+  }
+
+  form input {
+    width: 100%;
+  }
+}
