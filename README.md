@@ -1,5 +1,4 @@
 This is a responsive UI design example for creating a group.
-The buttons in this app do not perform any task, this is just the UI.
 
 API used for getting user data:
 http://s3-ap-southeast-1.amazonaws.com/he-public-data/users49b8675.json
